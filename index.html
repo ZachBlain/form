@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>FCC Form</title>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Form</h1>
+      <p>Please fill out all the information</p>
+    </div>
+    <form action="submit">
+      <label for="name"
+        >Name
+        <input
+          id="name"
+          type="text"
+          name="name"
+          required
+          placeholder="Enter your name"
+        />
+      </label>
+
+      <label for="email"
+        >Email
+        <input
+          id="email"
+          type="email"
+          name="email"
+          required
+          placeholder="Enter your Email"
+        />
+      </label>
+
+      <label for="age"
+        >Age
+        <input type="number" name="age" id="age" placeholder="Age" />
+      </label>
+
+      <label for="role"
+        >Which option best describes your current role?
+        <select name="role" id="role">
+          <option value="" disabled selected>--Select current role--</option>
+          <option value="student">Student</option>
+          <option value="fulltime">Full time work</option>
+          <option value="parttime">Part time work</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <p>Would you come back?</p>
+      <div>
+        <label for="yes">
+          <input class="button" type="radio" id="yes" name="comeback" />Yes
+        </label>
+
+        <label for="no">
+          <input class="button" type="radio" id="no" name="comeback" />No
+        </label>
+
+        <label for="maybe">
+          <input class="button" type="radio" id="maybe" name="comeback" />Maybe
+        </label>
+      </div>
+
+      <p>How did you hear about us? <span>(Check all that apply)</span></p>
+      <label for="friend">
+        <input id="friend" name="friend" type="checkbox" />Friend
+      </label>
+      <label for="family">
+        <input type="checkbox" name="family" id="family" />Family
+      </label>
+      <label for="tv"><input name="tv" id="tv" type="checkbox" />TV</label>
+      <label for="radio"><input type="checkbox" />Radio</label>
+      <label for="reddit"
+        ><input type="checkbox" id="reddit" name="reddit" />Reddit</label
+      >
+      <div class="space">
+        <label for="comments">
+          Any comments or suggestions?
+          <textarea
+            class="text_area_rows"
+            name="comments"
+            id="comments"
+            rows="50"
+            placeholder="Enter your comments here..."
+          ></textarea>
+        </label>
+      </div>
+      <button class="button_color" type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>

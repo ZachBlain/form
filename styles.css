@@ -1,0 +1,57 @@
+form {
+  display: block;
+  width: 700px;
+  height: 100%;
+  background-color: #1b1b32cc;
+  margin: auto;
+  padding: 3rem;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 0.35rem;
+  font-family: inherit, sans-serif;
+}
+
+input:not([type="radio"], [type="checkbox"]),
+select,
+button,
+textarea,
+input::placeholder,
+textarea::placeholder {
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 5px;
+  border-radius: 0.35rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.text_area_rows {
+  height: 10rem;
+}
+.button_color {
+  background-color: #9dc183;
+  color: #f0ead6;
+}
+
+.space {
+  margin-top: 1.5rem;
+}
+
+input[type="radio"],
+[type="checkbox"] {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-bottom: 1rem;
+}
+.center {
+  text-align: center;
+  color: #3a3a3a;
+}
+body {
+  background-image: url("blue.jpg");
+  background-size: cover;
+}
+span {
+  font-size: 1.2rem;
+}
